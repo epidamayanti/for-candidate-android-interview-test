@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INPUT"
+        android:gravity="center"
+        android:textColor="#000"/>
+    <de.blox.graphview.GraphView
+        android:id="@+id/graph2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        app:lineColor="@android:color/holo_blue_dark"
+        app:useMaxSize="true"
+        tools:context=".problems.androidView.graphTraversal.GraphActivity" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OUTPUT"
+        android:gravity="center"
+        android:textColor="#000"/>
+    <de.blox.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        app:hasClickableChildren="true"
+        app:lineColor="@android:color/holo_blue_dark"
+        app:useMaxSize="true"
+        tools:context=".problems.androidView.graphTraversal.GraphActivity" />
+
+</LinearLayout>
